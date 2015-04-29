@@ -1,0 +1,44 @@
+#+startup: beamer
+#+LaTeX_CLASS: beamer
+#+TITLE: Black carbon sampling at Gould Hall: Data collection and analysis
+#+DATE: 2015-05-06 || URBDP 598I -- Transportation and the Environment
+#+AUTHOR: Sarah Titcomb \& Peter Schmiedeskamp
+#+OPTIONS: toc:nil
+#+LaTeX_CLASS_OPTIONS: [bigger]
+
+
+* Research Questions
+- Spatial :: Do levels of black carbon vary in different locations
+             around Gould Hall? (We hypothesize that levels will be
+             higher closer to ground level, higher closer to high-traffic
+             streets such as 15th, and higher where there is more air
+             intake from outdoors.)
+- Temporal :: Do levels of black carbon vary over the course of the
+              day? (We hypothesize that levels will correlate to
+              traffic volumes.)
+
+* A Tale of Two Sampling Strategies
+** Spatial
+- 5 minute sample frames
+- locations: X, Y, Z
+- 30 second sample rate, 100ml flow
+- repeated N times over M days
+** Temporal
+- Continuous sample frame, approx 1 week
+- 3rd floor window overlooking NE 40th street, west side
+- 300 second sample rate, 100ml flow
+
+* Spatial variability in counts
+
+* Temporal variability in counts
+#+CAPTION: Timeseries plot of black carbon levels indicating some periodicity
+[[./fig/timeseries.pdf]]
+* Temporal variability continued...
+#+CAPTION: Timeseries plot of black carbon counts faceted by day
+[[./fig/timeseriesday.pdf]]
+
+* Colophon
+Presentation written in org-beamer; available under the [[http://creativecommons.org/licenses/by/3.0/us/][CC-BY-3.0 License]].
+
+Code and data available from:
+[[https://github.com/pschmied/carsharing-presentation][https://github.com/pschmied/ae51summary]]
