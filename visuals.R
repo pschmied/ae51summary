@@ -110,10 +110,10 @@ mest <- glm.nb(mdef, data=compldat)
 
 ## Model fit
 ## Actual versus predicted plot - negative binomial
-pavp <- ggplot(data.frame(actual=compldat$BC, predicted=getyhat(mest)),
-                aes(x=actual, y=predicted)) +
-         geom_abline(intercept=0, slope=1, color="red") +
-         geom_point() + theme_bw()
+## pavp <- ggplot(data.frame(actual=compldat$BC, predicted=getyhat(mest)),
+##                 aes(x=actual, y=predicted)) +
+##          geom_abline(intercept=0, slope=1, color="red") +
+##          geom_point() + theme_bw()
 
-ggsave(file="avp.pdf", path="fig", width=10, height=10, units=("in"))
+## ggsave(file="avp.pdf", path="fig", width=10, height=10, units=("in"))
 
