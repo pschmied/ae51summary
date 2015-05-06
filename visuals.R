@@ -3,6 +3,7 @@ library(lubridate)
 library(scales)
 library(pscl)
 library(simcf)
+library(xtable)
 
 ##
 ## Data prep
@@ -108,12 +109,18 @@ compldat <- dat[complete.cases(
 
 mest <- glm.nb(mdef, data=compldat)
 
+print(xtable(mest, caption="Negative binomial model estimation", digits=3),
+      file="./fig/model.tex")
+
+
 ## Model fit
 ## Actual versus predicted plot - negative binomial
-## pavp <- ggplot(data.frame(actual=compldat$BC, predicted=getyhat(mest)),
-##                 aes(x=actual, y=predicted)) +
-##          geom_abline(intercept=0, slope=1, color="red") +
-##          geom_point() + theme_bw()
+##
+predictedy <- predict(mest,newdata=compldat, type="response")
+pavp <- ggplot(data.frame(actual=compldat$BC, predicted=predictedy),
+                aes(x=actual, y=predicted)) +
+         geom_abline(intercept=0, slope=1, color="red") +
+         geom_point() + theme_bw()
 
-## ggsave(file="avp.pdf", path="fig", width=10, height=10, units=("in"))
+ggsave(file="avp.pdf", path="fig", width=10, height=10, units=("in"))
 
