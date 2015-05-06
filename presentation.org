@@ -36,9 +36,15 @@
 * Temporal variability continued...
 #+CAPTION: Timeseries plot of black carbon counts faceted by day
 [[./fig/timeseriesday.pdf]]
+* Temporal variability modeled
+\input{./fig/model.tex}
 
 * Colophon
 Presentation written in org-beamer; available under the [[http://creativecommons.org/licenses/by/3.0/us/][CC-BY-3.0 License]].
 
 Code and data available from:
 [[https://github.com/pschmied/carsharing-presentation][https://github.com/pschmied/ae51summary]]
+
+* Model Fit - Actual vs. Predicted
+#+CAPTION: Actual values versus predicted values
+[[./fig/avp.pdf]]
