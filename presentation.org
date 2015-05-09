@@ -10,25 +10,28 @@
 * Research Questions
 - Spatial :: Do levels of black carbon vary in different locations
              around Gould Hall? (We hypothesize that levels will be
-             higher closer to ground level, higher closer to high-traffic
-             streets such as 15th, and higher where there is more air
-             intake from outdoors.)
+             higher closer to high-traffic streets such as 15th.)
 - Temporal :: Do levels of black carbon vary over the course of the
               day? (We hypothesize that levels will correlate to
               traffic volumes.)
 
 * A Tale of Two Sampling Strategies
 ** Spatial
-- 5 minute sample frames
-- locations: X, Y, Z
+- 10 minute sample frames
+- locations: University Way, 40th St, 15th Ave, Green Wall
 - 30 second sample rate, 100ml flow
-- repeated N times over M days
+- repeated over 4 days
 ** Temporal
 - Continuous sample frame, approx 1 week
 - 3rd floor window overlooking NE 40th street, west side
 - 300 second sample rate, 100ml flow
 
 * Spatial variability in counts
+\input{./fig/spotstats.tex}
+
+* Spatial variability in counts visualized
+#+CAPTION: Black carbon counts by location
+[[./fig/spotboxplot.pdf]]
 
 * Temporal variability in counts
 #+CAPTION: Timeseries plot of black carbon levels indicating some periodicity
@@ -48,3 +51,10 @@ Code and data available from:
 * Model Fit - Actual vs. Predicted
 #+CAPTION: Actual values versus predicted values
 [[./fig/avp.pdf]]
+* Continuous sample's distribution
+#+CAPTION: Distribution of black carbon counts in continuous sample appears to be approximately Poisson
+[[./fig/countsdist.pdf]]
+
+* Spot sample's distribution
+#+CAPTION: Distribution of black carbon counts in spot sample
+[[./fig/spotdist.pdf]]
