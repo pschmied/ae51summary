@@ -26,6 +26,10 @@
 - 3rd floor window overlooking NE 40th street, west side
 - 300 second sample rate, 100ml flow
 
+* The locations
+#+ATTR_LATEX: :height 0.85\textheight
+[[./fig/sampling_points.pdf]]
+
 * Spatial variability in counts
 \input{./fig/spotstats.tex}
 
