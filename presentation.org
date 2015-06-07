@@ -46,7 +46,12 @@
 * Temporal variability modeled
 \input{./fig/model.tex}
 
-* Colophon
+* Questions?
+** Contact:
+Sarah Titcomb <stitcomb@uw.edu>
+Peter Schmiedeskamp <pschmied@uw.edu>
+
+** Colophon
 Presentation written in org-beamer; available under the [[http://creativecommons.org/licenses/by/3.0/us/][CC-BY-3.0 License]].
 
 Code and data available from:
